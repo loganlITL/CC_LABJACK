@@ -69,7 +69,7 @@ void setup() {
     // Put your setup code here, it will only run once:
 
     // counter for loop
-    global int i = 0;
+    //global int i = 0;
     // Sets all motor connectors to the correct mode for Follow Digital
     // Torque mode.
     MotorMgr.MotorModeSet(MotorManager::MOTOR_ALL,
@@ -105,14 +105,14 @@ void loop() {
     CommandTorque(20);    // See below for the detailed function definition.
     Serial.println("first command torque activated");
     // Wait 500ms.
-    delay(500);
+    delay(200);
     
 
     CommandTorque(-20); // Output 20% peak torque in the negative (CW) direction.
     Serial.println("second command torque activated");
-    delay(500);
+    delay(200);
 
-    i++;
+    //i++;
 
 }
 
